@@ -30,10 +30,10 @@ const StyledTableRow = styled(TableRow)(({ theme }) => ({
   },
 }));
 
-const rowsPrestamo = DataPrueba.prestamos;
+const rowsPrestamo = DataPrueba.cuentas;
 console.log(rowsPrestamo)
 
-export default function CustomizedTables() {
+export default function CustomizedTablesAccount() {
   return (
     <TableContainer component={Paper} style={{width: '50%'}}>
       <Table sx={{ minWidth: 700 }} aria-label="customized table">

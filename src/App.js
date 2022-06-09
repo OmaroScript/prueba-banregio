@@ -34,21 +34,39 @@ const CssTextField = styled(TextField)({
 });
 
 function App() {
-  const [buttonActive, setButtonActivbe] = useState(true)
+  const [datos, setDatos] = useState({
+    fecha: '',
+    intereses: '',
+    iva: '',
+    anioComercial: ''
+  })
 
+  const [buttonActive, setButtonActive] = useState(true)
+
+  const handleInputChange = (event) => {
+    // console.log(event.target.value)
+    setDatos({
+      ...datos,
+      [event.target.name]: event.target.value
+    })
+    if(Object.values(datos).map(dato => dato.length > 0)) {
+      setButtonActive(false)
+    }
+  }
 
   return (
     <div className="App">
       <header className="App-header">
+        <h2>Prueba Banregio</h2>
         <img src={logo} className="App-logo" alt="logo" />
       </header>
       <div className='datosTexto'>
         <h2>Ingresar datos</h2>
         <Box>
-          <CssTextField label='Fecha Actual'/><br/><br/>
-          <CssTextField label='Tasa Interés' /><br/><br/>
-          <CssTextField label='Tasa IVA'/><br/><br/>
-          <CssTextField label='Días Año Comercial'/><br/><br/>
+          <CssTextField label='Fecha Actual' name='fecha' onChange={handleInputChange}/><br/><br/>
+          <CssTextField label='Tasa Interés' name='intereses' onChange={handleInputChange}/><br/><br/>
+          <CssTextField label='Tasa IVA' name='iva' onChange={handleInputChange}/><br/><br/>
+          <CssTextField label='Días Año Comercial' name='anioComercial' onChange={handleInputChange}/><br/><br/>
         </Box>
         <Button variant="contained" endIcon={<SendIcon />} disabled={buttonActive}>
           Send
@@ -67,29 +85,3 @@ function App() {
 }
 
 export default App;
-
-// import logo from './logo.svg';
-// import './App.css';
-
-// function App() {
-//   return (
-//     <div className="App">
-//       <header className="App-header">
-//         <img src={logo} className="App-logo" alt="logo" />
-//         <p>
-//           Edit <code>src/App.js</code> and save to reload.
-//         </p>
-//         <a
-//           className="App-link"
-//           href="https://reactjs.org"
-//           target="_blank"
-//           rel="noopener noreferrer"
-//         >
-//           Learn React
-//         </a>
-//       </header>
-//     </div>
-//   );
-// }
-
-// export default App;
