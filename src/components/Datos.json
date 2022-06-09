@@ -1,0 +1,96 @@
+{
+	"prestamos": [
+		{
+			"Cliente": "00103228",
+			"Id": 2,
+			"Fecha": "2021-01-19",
+			"Monto": 725.18,
+			"Estado": "Pendiente"
+		},
+		{
+			"Cliente": "00103228",
+			"Id": 4,
+			"Fecha": "2021-02-04",
+			"Monto": 380,
+			"Estado": "Pendiente"
+		},
+		{
+			"Cliente": "00103228",
+			"Id": 1,
+			"Fecha": "2021-01-10",
+			"Monto": 37500,
+			"Estado": "Pendiente"
+		},
+		{
+			"Cliente": "00103228",
+			"Id": 3,
+			"Fecha": "2021-01-31",
+			"Monto": 1578.22,
+			"Estado": "Pendiente"
+		},
+		{
+			"Cliente": "70099925",
+			"Id": 1,
+			"Fecha": "2021-01-07",
+			"Monto": 2175.25,
+			"Estado": "Pagado"
+		},
+		{
+			"Cliente": "70099925",
+			"Id": 2,
+			"Fecha": "2021-01-13",
+			"Monto": 499.99,
+			"Estado": "Pagado"
+		},
+		{
+			"Cliente": "70099925",
+			"Id": 3,
+			"Fecha": "2021-01-24",
+			"Monto": 5725.18,
+			"Estado": "Pendiente"
+		},
+		{
+			"Cliente": "15000125",
+			"Id": 1,
+			"Fecha": "2020-12-31",
+			"Monto": 15220,
+			"Estado": "Pagado"
+		},
+		{
+			"Cliente": "70099925",
+			"Id": 4,
+			"Fecha": "2021-02-07",
+			"Monto": 876.13,
+			"Estado": "Pendiente"
+		},
+		{
+			"Cliente": "00298185",
+			"Id": 1,
+			"Fecha": "2021-02-04",
+			"Monto": 545.55,
+			"Estado": "Pendiente"
+		}
+	],
+  "cuentas": [
+		{
+			"Cliente": "00103228",
+			"Monto": 15375.28,
+			"Estado": "Activa"
+		},
+		{
+			"Cliente": "70099925",
+			"Monto": 3728.51,
+			"Estado": "Bloqueada"
+		},
+		{
+			"Cliente": "15000125",
+			"Monto": 235.28,
+			"Estado": "Activa"
+		},
+		{
+			"Cliente": "00298185",
+			"Monto": 0,
+			"Estado": "Cancelada"
+		}
+	]
+}
